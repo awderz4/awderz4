@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Generate Torn Codex scene
 
 on:
   schedule:
@@ -14,12 +14,15 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: Platane/snk@v3
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+          python-version: "3.12"
+
+      - run: python scripts/torn_codex.py ${{ github.repository_owner }} dist/torn-codex.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:

@@ -126,10 +126,7 @@ A brief of private client projects I've delivered. The code is private, but I'm 
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/awderz4/awderz4/output/github-snake-dark.svg" />
-    <img src="https://raw.githubusercontent.com/awderz4/awderz4/output/github-snake.svg" alt="contribution snake" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/awderz4/awderz4/output/torn-codex.svg" width="100%" alt="The Torn Codex: contributions written back into a scattered world" />
 </p>
 
 ---
