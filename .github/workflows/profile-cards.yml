@@ -1,4 +1,4 @@
-name: Generate Torn Codex scene
+name: Generate profile cards
 
 on:
   schedule:
@@ -20,7 +20,9 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: python scripts/torn_codex.py ${{ github.repository_owner }} dist/torn-codex.svg
+      - run: |
+          python scripts/torn_codex.py ${{ github.repository_owner }} dist/torn-codex.svg
+          python scripts/activity_card.py ${{ github.repository_owner }} dist/activity.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

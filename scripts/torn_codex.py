@@ -20,7 +20,7 @@ query($login: String!) {
     contributionsCollection {
       contributionCalendar {
         totalContributions
-        weeks { contributionDays { contributionCount contributionLevel weekday } }
+        weeks { contributionDays { contributionCount contributionLevel weekday date } }
       }
     }
   }

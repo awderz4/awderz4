@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" role="img" aria-labelledby="t">
+  <title id="t">Awder Kawa, full-stack engineer in Erbil, Iraq</title>
+  <defs>
+    <clipPath id="card"><rect width="1000" height="280" rx="16"/></clipPath>
+    <radialGradient id="teal"><stop offset="0" stop-color="#2cc5b8" stop-opacity=".32"/><stop offset="1" stop-color="#2cc5b8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gold"><stop offset="0" stop-color="#f6cd5e" stop-opacity=".22"/><stop offset="1" stop-color="#f6cd5e" stop-opacity="0"/></radialGradient>
+    <radialGradient id="violet"><stop offset="0" stop-color="#7c5cff" stop-opacity=".2"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#ffffff" opacity=".07"/></pattern>
+    <linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#0b0a12"/><stop offset=".55" stop-color="#0b0a12" stop-opacity=".6"/><stop offset="1" stop-color="#0b0a12" stop-opacity="0"/></linearGradient>
+    <path id="page" d="M-34 -44H22L34 -32V44H-34Z"/>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1000" height="280" fill="#0b0a12"/>
+
+    <!-- Slow aurora -->
+    <g>
+      <circle cx="790" cy="70" r="280" fill="url(#teal)"/>
+      <circle cx="930" cy="270" r="240" fill="url(#gold)"/>
+      <circle cx="600" cy="300" r="260" fill="url(#violet)"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -70 26; 20 -18; 0 0" dur="22s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.35;.7;1" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1"/>
+    </g>
+    <rect width="1000" height="280" fill="url(#dots)"/>
+    <rect width="640" height="280" fill="url(#fade)"/>
+
+    <!-- Codex mark: three torn pages, gently floating -->
+    <g transform="translate(830 140)">
+      <g>
+        <use href="#page" transform="rotate(-14) translate(-18 6)" fill="#141221" stroke="#2a2638" stroke-width="1.5"/>
+        <use href="#page" transform="rotate(8) translate(16 -4)" fill="#151324" stroke="#2cc5b8" stroke-opacity=".55" stroke-width="1.5"/>
+        <g transform="rotate(-3)">
+          <path d="M-34 -44H22L34 -32V20L26 26L18 21L9 30L0 24L-9 31L-18 25L-27 30L-34 26Z" fill="#191628" stroke="#f6cd5e" stroke-width="1.6"/>
+          <path d="M22 -44V-32H34" fill="none" stroke="#f6cd5e" stroke-width="1.6"/>
+          <g stroke="#f6cd5e" stroke-linecap="round" stroke-width="2.2">
+            <path d="M-22 -26H8" stroke-opacity=".9"/>
+            <path d="M-22 -14H16" stroke-opacity=".6"/>
+            <path d="M-22 -2H2" stroke-opacity=".45"/>
+            <path d="M-22 10H12" stroke-opacity=".3"/>
+          </g>
+        </g>
+        <animateTransform attributeName="transform" type="translate" values="0 0; 0 -7; 0 0" dur="7s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"/>
+      </g>
+    </g>
+
+    <!-- Text -->
+    <g font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif">
+      <text x="56" y="84" font-size="13" font-weight="600" letter-spacing="3" fill="#8a8499">FULL-STACK ENGINEER · ERBIL, IRAQ</text>
+      <text x="54" y="146" font-size="60" font-weight="700" letter-spacing="-1.5" fill="#f5f3fa">Awder Kawa</text>
+      <text x="56" y="184" font-size="19" fill="#b5afc4">I build commerce platforms, mobile apps and, lately, <tspan fill="#f6cd5e">worlds.</tspan></text>
+
+      <g font-size="13" fill="#d7d2e3">
+        <rect x="56" y="210" width="96" height="30" rx="15" fill="#ffffff" fill-opacity=".04" stroke="#2a2638"/>
+        <text x="104" y="230" text-anchor="middle">TypeScript</text>
+        <rect x="162" y="210" width="76" height="30" rx="15" fill="#ffffff" fill-opacity=".04" stroke="#2a2638"/>
+        <text x="200" y="230" text-anchor="middle">Python</text>
+        <rect x="248" y="210" width="76" height="30" rx="15" fill="#ffffff" fill-opacity=".04" stroke="#2a2638"/>
+        <text x="286" y="230" text-anchor="middle">Flutter</text>
+        <rect x="334" y="210" width="120" height="30" rx="15" fill="#f6cd5e" fill-opacity=".08" stroke="#f6cd5e" stroke-opacity=".45"/>
+        <text x="394" y="230" text-anchor="middle" fill="#f6cd5e">Unreal Engine</text>
+      </g>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="999" height="279" rx="15.5" fill="none" stroke="#ffffff" stroke-opacity=".06"/>
+</svg>
